@@ -1,0 +1,29 @@
+#!/bin/sh
+
+: \
+"""
+Wrapper for rfkill binary.
+
+This script spawns a process, then monitors stdin of its own parent
+and terminates the child when an EOF is received from the parent.
+
+This will happen when safechild's parent exits and its
+pipes are closed, regardless of *how* it got terminated.
+
+This script must be spawned by its parent with a STDIN pipe.  The pipe
+never actually needs to be used or access (in fact it's probably safer
+if it *isn't* accessed, since unless you're careful, garbage collection
+may cause an EOF to be sent, causing early termination of this script
+and its child.)
+
+"""
+
+trap exit CHLD
+
+"$@" &
+childPID=$!
+
+while read -r anything; do : nothing; done
+
+kill $childPID
+wait

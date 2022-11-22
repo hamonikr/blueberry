@@ -1,0 +1,566 @@
+blueberry (1.4.8+hamonikr1) taebaek; urgency=medium
+
+  * Release for HamoniKR 6.0
+   - Fix display tray popup menu (https://github.com/linuxmint/blueberry/issues/120)
+   - merge fro upstream v1.4.8 (https://github.com/linuxmint/blueberry)
+
+ --  HamoniKR <pkg@hamonikr.org>  Tue, 22 Nov 2022 16:41:27 +0900
+
+blueberry (1.4.8) vanessa; urgency=medium
+
+  * Update README.md
+  * l10n: Update files
+  * l10n: Update translations
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sun, 24 Jul 2022 11:52:22 +0200
+
+blueberry (1.4.7) una; urgency=medium
+
+  * l10n: Update translations
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 31 Dec 2021 12:33:32 +0000
+
+blueberry (1.4.6) una; urgency=medium
+
+  * l10n: Update translations
+  * l10n: Update files
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 06 Dec 2021 15:22:10 +0000
+
+blueberry (1.4.5) una; urgency=medium
+
+  [ P. Radha Krishna ]
+  * Added Turn bluetooth on/off option in tray menu #112 (#117)
+
+  [ Michael Webster ]
+  * blueberry-tray.py: Remove menu positioning code.
+  * blueberry-tray.py: Silence a runtime warning.
+
+  [ Mickey Rose ]
+  * rfkillMagic: rewrite safechild in shell script to reduce memory usage (#115)
+
+  [ P. Radha Krishna ]
+  * Added build & install steps to readme file (#118)
+
+  [ Clement Lefebvre ]
+  * l10n: Update POT
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 26 Nov 2021 10:14:48 +0000
+
+blueberry (1.4.4) uma; urgency=medium
+
+  * l10n: Update translations
+  * l10n: Generate files
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 25 Jun 2021 14:38:00 +0100
+
+blueberry (1.4.3) uma; urgency=medium
+
+  * l10n: Update translations
+  * l10n: Generate files
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 10 Jun 2021 11:46:32 +0100
+
+blueberry (1.4.2) ulyssa; urgency=medium
+
+  * l10n: Update translations
+  * l10n: Update files
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 02 Jan 2021 16:31:59 +0000
+
+blueberry (1.4.1) ulyssa; urgency=medium
+
+  * l10n: Update translations
+  * l10n: Generate files
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 10 Dec 2020 12:40:56 +0000
+
+blueberry (1.4.0) ulyssa; urgency=medium
+
+  [ okaestne ]
+  * Don't use /usr/bin/env to call python3
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 30 Nov 2020 11:39:47 +0000
+
+blueberry (1.3.9) ulyana; urgency=medium
+
+  * l10n: Update translations
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 24 Jun 2020 11:39:08 +0100
+
+blueberry (1.3.8) ulyana; urgency=medium
+
+  [ Michael Webster ]
+  * blueberry.ui: Change the valign of the headerbar switch to center, otherwise it wants to expand to fill the entire headerbar height.
+
+  [ Clement Lefebvre ]
+  * Remove Cinnamon applet
+  * Make active tray icon more recognizable
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 25 May 2020 17:48:43 +0100
+
+blueberry (1.3.7) ulyana; urgency=medium
+
+  [ cptpcrd ]
+  * obex: Remove hard requirement on deprecated hcitool
+
+  [ Clement Lefebvre ]
+  * l10n: Update translations
+  * l10n: Generate desktop files
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 12 May 2020 10:08:32 +0100
+
+blueberry (1.3.6) ulyana; urgency=medium
+
+  [ Clement Lefebvre ]
+  * l10n: Update POT
+
+  [ Michael Webster ]
+  * blueberry.ui: Lower version requirement (current releases are still on gtk 3.22.
+  * Fix debian/control to refer to python3.
+
+  [ Clement Lefebvre ]
+  * tray: Switch to symbolic icons (#100)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 21 Mar 2020 10:08:52 +0000
+
+blueberry (1.3.5) debbie; urgency=medium
+
+  [ Michael Webster ]
+  * blueberry.py: Fix handling of the device name/alias.
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 04 Feb 2020 15:10:44 +0000
+
+blueberry (1.3.4) tricia; urgency=medium
+
+  * l10n: Update translations
+  * l10n: Update files
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 06 Jan 2020 11:10:29 +0000
+
+blueberry (1.3.3) tricia; urgency=medium
+
+  * l10n: Update translations
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 11 Dec 2019 13:55:49 +0000
+
+blueberry (1.3.2) tricia; urgency=medium
+
+  [ samtygier ]
+  * Handle error from rfkill (#94)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 10 Dec 2019 10:12:12 +0000
+
+blueberry (1.3.1) tricia; urgency=medium
+
+  * l10n: Update translations
+  * l10n: Generate files
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 26 Nov 2019 17:03:29 +0000
+
+blueberry (1.3.0) tricia; urgency=medium
+
+  [ Clement Lefebvre ]
+  * Add support for XAppStatusIcon
+  * StatusIcon: Switch to activate signal
+
+  [ James Ross ]
+  * obex: check for None when setting shared path
+  * rework override to be compatible with any version
+
+  [ shanmukhateja ]
+  * Fix tray icon not shown with window (#89)
+
+  [ James Ross ]
+  * blueberry: UI redesign
+  * rfkillMagic: support hotpluggable bt devices
+  * rfkillMagic: support device indexes above 9
+  * blueberry: rework rfkill error to be switch-specific
+  * cleanup some unneded code
+
+  [ Clement Lefebvre ]
+  * UI: Ensure burger menu is visible
+  * l10n: Generate files
+  * l10n: Update POT
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 22 Nov 2019 14:16:18 +0000
+
+blueberry (1.2.9) tina; urgency=medium
+
+  * l10n: Update translations
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sun, 28 Jul 2019 15:23:07 +0200
+
+blueberry (1.2.8) tina; urgency=medium
+
+  [ Riccardo ]
+  * Don't spin spinner in devices tab (#85)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 20 Jul 2019 16:48:45 +0200
+
+blueberry (1.2.7) tina; urgency=medium
+
+  * l10n: Update translations
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 10 Jul 2019 11:03:57 +0200
+
+blueberry (1.2.6) tina; urgency=medium
+
+  [ Clement Lefebvre ]
+  * Fix generate_desktop_files
+
+  [ Sebastiaan Lokhorst ]
+  * Convert everything to use Python 3 (#66)
+
+  [ Koen ]
+  * Add paired submenu for quick connect/disconnect (#69)
+
+  [ Clement Lefebvre ]
+  * Tray: Use a tick image to represent connected device
+  * l10n: Update POT
+  * Tray: Fix paired menu when no devices are paired
+  * Use shell launchers and use setproctitle to name the python processes
+
+  [ shanmukhateja ]
+  * rfkill: Show error message on permission denied (#83)
+
+  [ Clement Lefebvre ]
+  * rfkill: Show the error message in the UI
+  * l10n: Update POT
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sun, 30 Jun 2019 17:55:33 +0200
+
+blueberry (1.2.5) tessa; urgency=medium
+
+  * l10n: Update translations
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 11 Dec 2018 14:49:56 +0000
+
+blueberry (1.2.4) tessa; urgency=medium
+
+  * l10n: Update translations
+  * l10n: Update files
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 28 Nov 2018 12:55:34 +0000
+
+blueberry (1.2.3) tara; urgency=medium
+
+  * l10n: Update translations
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 26 Jun 2018 13:40:27 +0200
+
+blueberry (1.2.2) tara; urgency=medium
+
+  * Add a 2s timeout around bt-adapter -i
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 19 Jun 2018 12:32:42 +0200
+
+blueberry (1.2.1) tara; urgency=medium
+
+  * l10n: Update translations
+  * l10n: Update files
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 22 May 2018 11:22:09 +0100
+
+blueberry (1.2.0) tara; urgency=medium
+
+  [ FriedrichFroebel ]
+  * Fix PyGIDeprecationWarnings (#51)
+
+  [ Leigh Scott ]
+  * fix some depreciation warnings (#49)
+
+  [ Germán Franco ]
+  * Remove unused applet label (#53)
+
+  [ NikoKrause ]
+  * applet: use bluetooth icon, remove dangerous flag (#57)
+
+  [ Leigh Scott ]
+  * Fix PyGIDeprecationWarning (#56)
+
+  [ Clement Lefebvre ]
+  * l10n: Update files
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 07 May 2018 15:25:00 +0100
+
+blueberry (1.1.20) sylvia; urgency=medium
+
+  [ Jeremy Fleischman ]
+  * Use a regex instead of the more brittle split implementation. This fixes #45.
+
+  [ Clement Lefebvre ]
+  * Fix python shebangs
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 18 Dec 2017 12:25:48 +0000
+
+blueberry (1.1.19) sylvia; urgency=medium
+
+  [ Michael Webster ]
+  * blueberry.py: Don't start blueberry-tray, it gets started on our behalf in the session manager since e3417c06177a.
+
+  [ Clement Lefebvre ]
+  * l10n: Update translations
+
+  [ Michael Webster ]
+  * Give blueberry-tray an application id, to prevent multiple instances, re-add Popen call in blueberry.py (xfce session management machinery doesn't start programs on the user's behalf after startup like it does in mate and cinnamon.)
+  * rfkillMagic: Use a child wrapper for the monitor subprocess, this ensures we don't end up with (#44)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 24 Nov 2017 11:02:34 +0000
+
+blueberry (1.1.18) sylvia; urgency=medium
+
+  [ Michael Webster ]
+  * Make blueberry-tray a GtkApplication and register with the session manager.
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 09 Nov 2017 16:35:15 +0000
+
+blueberry (1.1.17) sylvia; urgency=medium
+
+  * l10n: Update translations
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 03 Nov 2017 13:59:05 +0000
+
+blueberry (1.1.16) sylvia; urgency=medium
+
+  * Move window declaration to init()
+  * l10n: Generate desktop files
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 27 Oct 2017 13:47:12 +0100
+
+blueberry (1.1.15) sonya; urgency=medium
+
+  * l10n: Update translations
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 28 Jun 2017 10:06:49 +0200
+
+blueberry (1.1.14) sonya; urgency=medium
+
+  [ Michael Webster ]
+  * Add a small delay to the autostart tray process, it occasionally starts too soon and throws needless warnings.
+
+  [ Clement Lefebvre ]
+  * Fix unicode errors during OBEX file transfers
+  * Fix more unicode errors and missing arguments
+  * Obex: Fix non-translated strings
+  * l10n: Update POT file
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 26 Jun 2017 11:50:24 +0200
+
+blueberry (1.1.13) sonya; urgency=medium
+
+  [ JosephMcc ]
+  * Fix how autostart of the tray icon is handled (#37)
+
+  [ Clement Lefebvre ]
+  * Add exception handling around bt-adapter -i
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 12 Jun 2017 16:56:30 +0100
+
+blueberry (1.1.12) sonya; urgency=medium
+
+  * l10n: Update translations
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 23 May 2017 14:13:40 +0100
+
+blueberry (1.1.11) sonya; urgency=medium
+
+  [ Clement Lefebvre ]
+  * Remove debug log
+
+  [ Björn Esser ]
+  * add GPLv3 license-text
+  * Remove AutostartCondition
+
+  [ JosephMcc ]
+  * Stop using GtkV/HBox
+
+  [ Clement Lefebvre ]
+  * Bail out if something goes wrong
+  * l10n: Update translations
+  * l10n: Generate additional files
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 06 May 2017 15:11:06 +0100
+
+blueberry (1.1.10) serena; urgency=medium
+
+  * Add OBEX support
+  * Packaging: Add dependency on bluez-obexd
+  * Packaging: Add dependency on python-dbus
+  * Packaging: Add dependency on python-gi and gir1.2-notify-0.7
+  * Use pavucontrol for sound if present and DE isn't detected
+  * l10n: Update POT file
+  * Tray: Improve tooltip to show the name of the connected devices
+  * Provide a Cinnamon applet
+  * Overwrite the label in GnomeBluetooth SettingsWidget
+  * Fix cinnamon icons
+  * Remove blueberrySettings.py
+  * Add settings
+  * Add missing file
+  * Widen the default window size to 640px
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 17 Feb 2017 11:51:52 +0000
+
+blueberry (1.1.9) serena; urgency=medium
+
+  * l10n: Update translations
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 12 Dec 2016 12:33:13 +0000
+
+blueberry (1.1.8) serena; urgency=medium
+
+  * tray: Add missing import
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 12 Nov 2016 20:09:45 +0000
+
+blueberry (1.1.7) serena; urgency=medium
+
+  * l10n: Update translations
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 10 Nov 2016 09:53:37 +0000
+
+blueberry (1.1.6) serena; urgency=medium
+
+  * Specify versions of Gtk and GnomeBluetooth before loading them via gir
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 02 Nov 2016 14:39:16 +0000
+
+blueberry (1.1.5) sarah; urgency=medium
+
+  * Renamed the tray option more accurately
+  * Updated translations
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 25 Jun 2016 12:23:41 +0100
+
+blueberry (1.1.4) sarah; urgency=medium
+
+  * Updated translations
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 24 May 2016 14:18:36 +0100
+
+blueberry (1.1.3) sarah; urgency=medium
+
+  [ Clement Lefebvre ]
+  * Added blueberry.pot to version control
+
+  [ Sorokin Alexei ]
+  * Fix GtkStatusIcon menu popup on newer Gtk
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 28 Apr 2016 10:11:23 +0100
+
+blueberry (1.1.2) sarah; urgency=medium
+
+  * Added more padding and moved the switch to the top-right corner of the screen (looks out of place with themes where Gtk.Switch isn't centered)
+  * Specify gi versions before importing
+  * Updated translations
+  * Set up generate_desktop_files, makepot
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 22 Apr 2016 15:51:20 +0100
+
+blueberry (1.1.1) sarah; urgency=medium
+
+  [ Andrew Thornton ]
+  * Add disabled icon for bluetooth-tray
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 16 Feb 2016 16:34:34 +0000
+
+blueberry (1.1.0) betsy; urgency=medium
+
+  [ Balló György ]
+  * Hide in GNOME and KDE.
+  * Make blueberry-tray executable
+
+  [ György Balló ]
+  * Fix deprecation
+  * Detect more DEs via XDG_CURRENT_DESKTOP
+  * Fix monitoring settings
+
+  [ Balló György ]
+  * Hide also in Unity
+
+  [ Clement Lefebvre ]
+  * Updated translations
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 06 Nov 2015 14:31:27 +0000
+
+blueberry (1.0.9) betsy; urgency=medium
+
+  * Updated translations
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 26 Jun 2015 16:41:20 +0200
+
+blueberry (1.0.8) betsy; urgency=medium
+
+  * Updated translations
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 02 Jun 2015 12:35:13 +0200
+
+blueberry (1.0.7) betsy; urgency=medium
+
+  [ monsta ]
+  * add rfkill dependency
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 29 May 2015 10:11:45 +0200
+
+blueberry (1.0.6) betsy; urgency=medium
+
+  * Packaging: Replaces cinnamon-bluetooth
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 07 May 2015 16:21:48 +0200
+
+blueberry (1.0.5) betsy; urgency=medium
+
+  * Packaging: Break cinnamon-bluetooth
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 07 May 2015 15:53:15 +0200
+
+blueberry (1.0.4) betsy; urgency=medium
+
+  [ Michael Webster ]
+  * Unify settings getter/setter
+
+  [ Clement Lefebvre ]
+  * Updated translations
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 31 Mar 2015 12:19:38 +0200
+
+blueberry (1.0.3) betsy; urgency=medium
+
+  * Removed dodgy 128px icons and resized 16px icons
+  * Made Blueberry a Gtk.Application and enforced uniqueness (singleton application)
+  * Launch blueberry when clicking the tray
+  * Improved UI layout, added status image on top of the switch
+  * Improved tray icon (was too big), changed tray tooltip slightly (more context, less confusing)
+  * Updated pot file
+  * Tray: Exit properly when no adapter is found or settings indicate no tray is wanted
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 14 Mar 2015 14:43:46 +0100
+
+blueberry (1.0.2) betsy; urgency=medium
+
+  * Added blueberry to Xfce's Settings and moved it to Hardware category
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 12 Mar 2015 13:01:38 +0100
+
+blueberry (1.0.1) betsy; urgency=medium
+
+  [ Michael Webster ]
+  * Finish settings program
+  * Add system tray icon.
+  * blueberry.py: fix wrong stack page name
+
+  [ Clement Lefebvre ]
+  * Fixed MO generation
+  * Updated makepot and pot file
+  * Copied over blueman's tray icons (symbolic doesn't work well across DEs)
+  * Added hooks for sound/keyboard/mouse settings
+  * Updated translations
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 12 Mar 2015 12:22:53 +0100
+
+blueberry (1.0.0) betsy; urgency=low
+
+  * Initial release
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed,  11 Mar 2015 21:38:00 +0000
+
